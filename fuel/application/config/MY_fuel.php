@@ -41,7 +41,7 @@ $config['max_page_params'] = 0;
 // will auto search view files. 
 // If the URI is about/history and the about/history view 
 // does not exist but about does, it will render the about page
-$config['auto_search_views'] = FALSE;
+$config['auto_search_views'] = TRUE;
 
 // max upload files size for assets
 $config['assets_upload_max_size']	= 5000;
