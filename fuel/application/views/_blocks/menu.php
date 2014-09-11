@@ -1,19 +1,5 @@
-<!-- Navigation Block -->
-
-<nav class="navigation-wrap">
-	<div class="navigation-inner">
-		<ul class="menu">
-			<?php
-		 		if (!isset($CI)){
-		 			$CI =& get_instance();
-		 		}  
-		 		$menu = fuel_nav(array('render_type'=> 'array', 
-		 			'first_class'=>'first', 
-		 			'last_class'=>'last', 
-		 			'container_tag_id'=>'nav', 
-		 			'container_tag_class'=>'unknown', 
-		 			'item_id_prefix'=>'menu_'));
-			?>
-		</ul>
-	</div>
-</nav>
+<!-- navigation block --> 
+<div class="navigation-wrapper">
+	<?php echo fuel_nav(array('container_tag_id' => 'topmenu', 'item_id_prefix' => 'topmenu_')); ?>
+</div>
+<!-- end navigation block -->
